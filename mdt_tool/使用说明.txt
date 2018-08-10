@@ -1,0 +1,14 @@
+#author:HaoZhang
+
+1.环境：python3,有numpy和pandas库
+2.功能：
+	(a)合并多个大MDT文件(csv)
+	(b)为tdlte_mdt添加表头和填充type值(默认type=3)
+	(c)计算mdt采样点离基站的距离，清洗异常采样点(>3KM)
+3.说明：
+	(a)cmd下运行：python mdt_tool.pyc
+	(b)config文件夹下放工参
+	(C)csv文件夹下放原始MDT文件
+	(d)output文件夹下会生成：1.tdlte_dt1.csv(合并后的文件)；
+							 2.tdlte_dt2.csv（计算采样点离基站经纬度距离的文件）
+							 3.tdlte_dt.csv（清洗后的文件，可直接用于Linux定位）
